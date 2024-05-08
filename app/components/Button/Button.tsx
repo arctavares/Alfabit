@@ -9,6 +9,7 @@ const Button = ({children, className}: ButtonProps) => {
         px-[32px]
         py-[12px]
         text-white
+        tablet-text-sm
         ${className}
     `}>
             {children}
