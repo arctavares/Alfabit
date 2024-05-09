@@ -2,6 +2,19 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'Mulish';
+  src: url('./fonts/Mulish-Regular.woff2') format('woff2'),
+       url('./fonts/Mulish-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
 @layer base {
     :root {
       --primary: 45, 91, 255;
@@ -60,6 +73,14 @@
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
     --border-radius-lg: 16px;
+
+
+    /* Font Size */
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-nd: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
 
     }
   
