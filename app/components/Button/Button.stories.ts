@@ -20,15 +20,70 @@ const meta: Meta<ButtonProps> = {
 
 export default meta
 
+/* Código suprimido */
+
 export const Primary: StoryObj<ButtonProps> = {
     args: {
-        children: 'Botão'
+      children: 'Botão'
     }
-}
-
-export const Violet: StoryObj<ButtonProps> = {
+  }
+  
+  export const Disabled: StoryObj<ButtonProps> = {
     args: {
-        children: 'Botão',
-        className: 'theme-violet'
+      children: 'Botão',
+      disabled: true
     }
-}
+  }
+  
+  export const Secondary: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      variant: 'secondary'
+    }
+  }
+  
+  export const SecondaryDisabled: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      variant: 'secondary',
+      disabled: true
+    }
+  }
+  
+  export const Violet: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      className: 'theme-violet'
+    }
+  }
+  
+  export const VioletSecondary: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      className: 'theme-violet',
+      variant: 'secondary'
+    }
+  }
+  
+  export const Tertiary: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      className: 'tertiary',
+    }
+  }
+
+  export const TertiaryDisabled: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      className: 'tertiary',
+      disabled: true,
+    }
+  }
+
+  export const VioletTertiary: StoryObj<ButtonProps> = {
+    args: {
+      children: 'Botão',
+      className: 'theme-violet',
+      variant: 'tertiary'
+    }
+  }

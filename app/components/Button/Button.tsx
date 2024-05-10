@@ -10,8 +10,9 @@ export type ButtonProps = {
       case 'secondary':
         return disabled ? 'bg-disabled text-disabled' : 'bg-quaternary text-primary'
       case 'tertiary':
+        return disabled ? 'text-disabled' : 'text-primary';
       default:
-        return disabled ? '' : ''
+        return disabled ? 'text-disabled' : 'text-primary'
     }
   }
   
